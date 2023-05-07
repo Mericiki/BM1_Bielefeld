@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;                                  /* Innenabstand definieren */
+    margin: 0;                                   /* Außenabstand definieren  */
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Montserrat';                  /* Schriftart->   https://fonts.google.com/ */
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 100px 0;
+    background: #7d95be;
+}
+.section_title{
+    margin-bottom: 30px;
+}
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    transition: all .5s ease-in-out;            /* Übergang zwischen zwei Zuständen des Elements */
+}
+.section_title h2:hover{                        /* Mouseover-Effekt */  
+    background-color: #24caac;
+}
+/*----------HEADER---------- */
+header{
+    background: #2c175c;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+}   
+.navbar{                                        /* Design des Navigationsmenüs */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+.nav_links{
+    display: flex;
+}
+.nav_links li a{
+    margin-left: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.nav_links li a:hover{
+    background: #ff6e00;
+}
+.logo h2 a{
+    color: #ff6e00;
+    text-transform: uppercase;
+}
+/*---------- START ----------*/
+.inner_start{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff
+}
+.child_start{
+    flex-basis: 45%;
+}
+.child_start h1{
+    font-size: 50px;
+    color: #2c175c;
+}
+.span_child{
+    color: #574327;
+}
+.child_start h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}   
+.btn{
+    background: #590042;
+    padding: 12px 28px;
+    border-radius: 20px;                                /* die Ecken von Boxen runden */
+    color: #fff;
+    border: 1px solid #590042;
+    font-weight: 700;
+    cursor: pointer;                                    /* Mauszeiger */
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: transparent;
+    letter-spacing: 1px;
+}
+/*---------- VERLEIH ----------*/
+.inner_verleih{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff
+}
+.child_verleih{
+    flex-basis: 45%;
+}
+.child_verleih h1{
+    font-size: 50px;
+    color: #2c175c;
+}
+.span_child{
+    color: #574327;
+}
+.child_verleih h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}   
+/*---------- WERKSTATT ----------*/
+.inner_werkstatt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    color: #fff
+}
+.child_werkstatt{
+    flex-basis: 45%;
+    padding: 0 15px;
+}
+.child_werkstatt h1{
+    font-size: 50px;
+    color: #2c175c;
+}
+.span_child{
+    color: #574327;
+}
+.child_werkstatt h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}   
+
+/*---------- ÜBER UNS ----------*/
+.inner_ueberuns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    color: #fff
+}
+.child_ueberuns{
+    flex-basis: 45%;
+}
+.child_ueberuns h1{
+    font-size: 50px;
+    color: #2c175c;
+}
+.span_child{
+    color: #574327;
+}
+.child_ueberuns h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}    
+/*---------- ANREISE ----------*/
+.inner_anreise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    color: #fff
+}
+.child_anreise{
+    flex-basis: 45%;
+}
+.child_anreise h1{
+    font-size: 50px;
+    color: #2c175c;
+}
+.span_child{
+    color: #574327;
+}
+.child_anreise h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}    
+/*---------- KONTAKT ----------*/
+.inner_kontakt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+.child_kontakt{
+    flex-basis: 45% ;
+}
+.child_kontakt form{
+    padding: 50px 40px;
+    background: #2F363E;
+    border-radius: 5px;
+}
+.child_kontakt form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #24292D;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+.child_kontakt form input,textarea:focus{
+    color: #fff;
+}
+.child_kontakt form input:focus{
+    letter-spacing: 1px;
+}
+.child_kontakt form textarea:focus{
+    letter-spacing: 1px;
+}
+.child_kontakt form input:last-child{
+    margin-bottom: 0;
+    background: #24caac;
+    border: 1px solid #24caac;
+    transition: .3s;
+}
+.child_kontakt form input:last-child:hover{
+    background: transparent;
+    color: #fff;    
+}
+
+
