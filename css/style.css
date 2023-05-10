@@ -242,5 +242,7 @@ header{
     background: transparent;
     color: #fff;    
 }
-
-
+.meric:hover{
+    
+    color: red;
+}
